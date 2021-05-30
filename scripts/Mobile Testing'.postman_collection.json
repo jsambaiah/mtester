@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "c73bb253-bf50-4124-9629-65d9c8912b2e",
+		"name": "Mobile Testing'",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book Mobile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Samsung Galaxy S9\",\n    \"bookingInfo\": {\n        \"bookedBy\": \"samba\"\n    }\n}"
+				},
+				"url": {
+					"raw": "{{mtester}}/v1/mobiles",
+					"host": [
+						"{{mtester}}"
+					],
+					"path": [
+						"v1",
+						"mobiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Mobile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{mtester}}/v1/mobiles/1",
+					"host": [
+						"{{mtester}}"
+					],
+					"path": [
+						"v1",
+						"mobiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Bookings of Mobile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mtester}}/v1/mobiles/1/bookings",
+					"host": [
+						"{{mtester}}"
+					],
+					"path": [
+						"v1",
+						"mobiles",
+						"1",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Mobiles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mtester}}/v1/mobiles?page=0&size=10",
+					"host": [
+						"{{mtester}}"
+					],
+					"path": [
+						"v1",
+						"mobiles"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Available Mobiles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mtester}}/v1/mobiles?available=Yes&page=0&size=10",
+					"host": [
+						"{{mtester}}"
+					],
+					"path": [
+						"v1",
+						"mobiles"
+					],
+					"query": [
+						{
+							"key": "available",
+							"value": "Yes"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Mobiles by Mobile Name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{mtester}}/v1/mobiles?name=Apple iPhone 4s&page=0&size=10",
+					"host": [
+						"{{mtester}}"
+					],
+					"path": [
+						"v1",
+						"mobiles"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Apple iPhone 4s"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
