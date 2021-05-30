@@ -1,5 +1,4 @@
-# mtester
-Mobile Test Application
+# mtester Mobile Test Application
 
 To Run
   1. Build the project with JDK 8 and Maven 3.4.0.3
