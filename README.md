@@ -6,4 +6,5 @@ To Run
   
     ```java -jar mtester-0.0.1-SNAPSHOT.jar```
   3. Postman scripts are avilable in scripts folder.
+
   
