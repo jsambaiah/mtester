@@ -6,6 +6,7 @@
 	
 	<!-- code changes to master branch to directly-->
 	<parent>
+		<!-- POM file Code changes to the master branch to form a new branch --> 
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.7.RELEASE</version>
